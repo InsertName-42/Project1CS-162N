@@ -37,8 +37,8 @@ Design and implement a program that converts a sentence entered by the user into
             string[] encodeWords = encodeValue.Split(' ');
 
             //Loop through
-            foreach (string word in encodeWords){
-                encryptedPhrase.Append(EncodeWord(word, shift)).Append(" ");
+            foreach (string encodeWord in encodeWords){
+                encryptedPhrase.Append(EncodeWord(encodeWord, shift)).Append(" ");
             }
             //Display
             Console.WriteLine("Encrypted Text: " + encryptedPhrase.ToString().Trim());
